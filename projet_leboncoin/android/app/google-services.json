@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "848118956954",
+    "project_id": "ipssiprojet-b66ab",
+    "storage_bucket": "ipssiprojet-b66ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848118956954:android:bdc94d85faff1a1af7f023",
+        "android_client_info": {
+          "package_name": "com.example.projet_leboncoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848118956954-io0gqblptp6lvfbgm1hctdkic96opfkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmizhYIXqZ28sKcUHO_tiD6yNXevuqvZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848118956954-io0gqblptp6lvfbgm1hctdkic96opfkj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "848118956954-8ko3bvvfjhpjq9h16cjh9on6djbjvpch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.projetLeboncoin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

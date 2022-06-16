@@ -10,6 +10,10 @@ import 'package:file_picker/file_picker.dart';
 import '/Services/FirestoreHelper.dart';
 import '/Services/global.dart';
 
+import '/View/ajoutArticle.dart';
+import '/View/ModifArticle.dart';
+import '/View/dashBoard.dart';
+
 class MyDrawer extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
@@ -41,7 +45,7 @@ class MyDrawerState extends  State<MyDrawer>{
                   child: Container(
                     height: 80,
                     decoration: BoxDecoration(
-                      shape: BoxShape.circle,
+                      shape: BoxShape.rectangle,
                       image: DecorationImage(
                           image: NetworkImage(GlobalUser.avatar!),
                           fit: BoxFit.fitHeight
@@ -50,7 +54,7 @@ class MyDrawerState extends  State<MyDrawer>{
 
                   ),
                   onTap: (){
-                    print("J'ai cliquer sur l'image");
+                    print("Ouverture sélection d'image");
                     pickImage();
                   },
                 ),
@@ -68,7 +72,7 @@ class MyDrawerState extends  State<MyDrawer>{
                        setState(() {
                          GlobalUser.pseudo = pseudoTempo;
                          Map<String,dynamic> map = {
-                           "PSEUDO": pseudoTempo
+                           "username": pseudoTempo
                          };
                          FirestoreHelper().updateUser(GlobalUser.id, map);
                        });
@@ -82,7 +86,7 @@ class MyDrawerState extends  State<MyDrawer>{
                    icon: (isEditing)?const Icon(Icons.check,color: Colors.green,):const Icon(Icons.edit),
                    label: (isEditing)?TextField(
                      decoration: const InputDecoration(
-                       hintText: "Entrer le pseudo",
+                       hintText: "Pseudonyme",
                      ),
                      onChanged: (newValue){
                        setState(() {
@@ -111,9 +115,49 @@ class MyDrawerState extends  State<MyDrawer>{
                     },
                     icon: const Icon(Icons.exit_to_app_sharp),
                     label: const Text("Fermer")
-                )
+                ),
+
+                ElevatedButton.icon(
+                    onPressed : (){
+                      //fonction pour s'inscrire
+                      gotoDashboard();
+                    },
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        backgroundColor: Colors.orangeAccent[200]),
+                    icon: const Icon(Icons.list_alt),// Text Color
+                    label: const Text("Articles")
 
 
+                ),
+
+
+                ElevatedButton.icon(
+                    onPressed : (){
+                      //fonction pour s'inscrire
+                      gotoAddArticle();
+                    },
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        backgroundColor: Colors.green[500]),
+                    icon: const Icon(Icons.new_label),// Text Color
+                    label: const Text("Ajouter article")
+
+
+                ),
+
+                ElevatedButton.icon(
+                    onPressed : (){
+                      //fonction pour s'inscrire
+                      gotoEditArticle();
+                    },
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        backgroundColor: Colors.blue[500]), // Text Color
+                    icon: const Icon(Icons.edit),// Text Color
+                    label: const Text("Mes articles")
+
+                ),
 
 
               ],
@@ -172,7 +216,7 @@ MyPopUp(){
                       //Mettre à jour notre base de donnée en stockant l'url
                       Map<String,dynamic> map ={
                         //Key : Valeur
-                        "AVATAR":urlImage
+                        "avatar":urlImage
                       };
                       FirestoreHelper().updateUser(GlobalUser.id, map);
 
@@ -216,7 +260,7 @@ MyPopUp(){
                       //Mettre à jour notre base de donnée en stockant l'url
                       Map<String,dynamic> map ={
                         //Key : Valeur
-                        "AVATAR":urlImage
+                        "avatar":urlImage
                       };
                       FirestoreHelper().updateUser(GlobalUser.id, map);
 
@@ -236,5 +280,31 @@ MyPopUp(){
 }
 
 
+  gotoDashboard(){
+    Navigator.push(context, MaterialPageRoute(
+        builder: (context){
+          return dashBoard();
+        }
+    ));
+  }
+
+  //Fonction
+  gotoAddArticle(){
+    Navigator.push(context, MaterialPageRoute(
+        builder: (context){
+          return ajoutArticle();
+        }
+    ));
+  }
+
+
+  //Fonction
+  gotoEditArticle(){
+    Navigator.push(context, MaterialPageRoute(
+        builder: (context){
+          return ModifArticle();
+        }
+    ));
+  }
 
 }

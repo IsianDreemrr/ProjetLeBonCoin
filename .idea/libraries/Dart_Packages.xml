@@ -205,6 +205,13 @@
             </list>
           </value>
         </entry>
+        <entry key="infinite_listview">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/infinite_listview-1.1.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="intl">
           <value>
             <list>
@@ -244,6 +251,13 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="numberpicker">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/numberpicker-2.1.1/lib" />
             </list>
           </value>
         </entry>
@@ -360,12 +374,14 @@
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.6/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/infinite_listview-1.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/material_color_utilities-0.1.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/numberpicker-2.1.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../Sources/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.2/lib" />

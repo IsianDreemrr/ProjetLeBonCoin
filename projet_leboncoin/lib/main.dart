@@ -91,19 +91,19 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             height : 80,
             decoration : const BoxDecoration(
-                shape : BoxShape.circle,
+                shape : BoxShape.rectangle,
                 image : DecorationImage(
                     image : NetworkImage("https://cdn.discordapp.com/attachments/852699363611902022/986904209762951178/unknown.png"),
-                    fit : BoxFit.fill
+                    fit : BoxFit.contain
                 )
             ),
           ),
-          const SizedBox(height : 10),
+          const SizedBox(height : 25),
           //Choix pour l'utilisateur
           ToggleButtons(
             children: const [
-              Text("Inscription"),
-              Text("Connexion")
+              Text(" Inscription "),
+              Text(" Connexion ")
             ],
             isSelected: selection,
             onPressed: (index){
